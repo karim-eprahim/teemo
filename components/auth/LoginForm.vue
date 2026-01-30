@@ -1,0 +1,72 @@
+<script setup lang="ts">
+import { ref } from 'vue';
+import { Form } from 'vee-validate';
+
+/*Social icons*/
+import google from '/images/svgs/google-icon.svg';
+import facebook from '/images/svgs/facebook-icon.svg';
+const router = useRouter();
+
+const checkbox = ref(false);
+const valid = ref(false);
+const show1 = ref(false);
+const password = ref('admin123');
+const username = ref('info@wrappixel.com');
+const passwordRules = ref([
+    (v: string) => !!v || 'Password is required',
+    (v: string) => (v && v.length <= 10) || 'Password must be less than 10 characters'
+]);
+const emailRules = ref([(v: string) => !!v || 'E-mail is required', (v: string) => /.+@.+\..+/.test(v) || 'E-mail must be valid']);
+function validate() {
+  router.push({ path: "/dashboards/ecommerce" });
+}
+
+</script>
+
+<template>
+    <v-row class="d-flex mb-3">
+        <v-col cols="6" sm="6" class="pr-2">
+            <v-btn variant="outlined" size="large" rounded="md"  class="border text-subtitle-1 hover-link-primary" block>
+                <img :src="google" height="16" class="me-2" alt="google" />
+                Google
+            </v-btn>
+        </v-col>
+        <v-col cols="6" sm="6" class="pl-2">
+            <v-btn variant="outlined" rounded="md" size="large" class="border text-subtitle-1  hover-link-primary" block>
+                <img :src="facebook" width="20" class="me-2" alt="facebook" />
+                Facebook
+            </v-btn>
+        </v-col>
+    </v-row>
+    <div class="d-flex align-center text-center mb-6">
+        <div class="text-h6 w-100 px-5 font-weight-regular auth-divider position-relative">
+            <span class="bg-surface px-5 py-3 position-relative  text-textPrimary ">or sign in with</span>
+        </div>
+    </div>
+    <Form @submit="validate" v-slot="{ errors, isSubmitting }" class="mt-5">
+        <v-label class="font-weight-semibold pb-2 text-textPrimary">Username</v-label>
+        <VTextField v-model="username" :rules="emailRules" class="mb-8" required hide-details="auto"></VTextField>
+        <div class="d-flex justify-space-between align-center pb-2">
+            <v-label class="font-weight-semibold text-textPrimary">Password</v-label>
+        </div>
+
+        <VTextField v-model="password" :rules="passwordRules" required hide-details="auto" type="password" class="pwdInput"></VTextField>
+        <div class="d-flex flex-wrap justify-space-between align-center my-3 ">
+            <v-checkbox
+                class="pe-2"
+                v-model="checkbox"
+                :rules="[(v: any) => !!v || 'You must agree to continue!']"
+                required
+                hide-details
+                color="primary"
+            >
+                <template v-slot:label class="font-weight-medium">Remeber this Device</template>
+            </v-checkbox>
+            <RouterLink to="/auth/forgot-password2" class="text-primary text-decoration-none font-weight-medium">Forgot Password ?</RouterLink>
+        </div>
+        <v-btn size="large" :loading="isSubmitting" color="primary" rounded="md" :disabled="valid" block type="submit" flat>Sign In</v-btn>
+        <div v-if="errors.apiError" class="mt-2">
+            <v-alert color="error">{{ errors.apiError }}</v-alert>
+        </div>
+    </Form>
+</template>

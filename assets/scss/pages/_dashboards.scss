@@ -1,0 +1,96 @@
+.welcome-bg {
+    background: rgba(17, 28, 45, .1);
+}
+
+.welcome-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.sales-profit {
+
+    .v-btn {
+        padding: 6px 0;
+
+        @media screen and (max-width:767px) {
+            width: 50%;
+        }
+    }
+
+
+
+
+    .v-tab--selected {
+        background-color: rgba(var(--v-theme-surface));
+
+        .v-btn__content {
+            .v-tab__slider {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.rounded-bars .apexcharts-bar-series.apexcharts-plot-series .apexcharts-series path {
+    clip-path: inset(0 0 5% 0 round 20px);
+}
+
+.rounded-circle .apexcharts-pie-area {
+    clip-path: inset(0 13% 33% 11% round 61px);
+}
+
+// Analytic Dash:
+.timeline-tabs {
+    .timeline {
+        .timeline-icon {
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 40px;
+                height: 20px;
+                width: 1px;
+                background-color: rgba(var(--v-theme-borderColor));
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+
+
+        }
+
+        &:last-child {
+            .timeline-icon {
+                &:after {
+                    height: 0;
+                }
+            }
+        }
+    }
+
+    .timeline-list {
+        border-bottom: 1px solid rgba(var(--v-theme-borderColor));
+        padding-bottom: 8px;
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+}
+
+// CRM Dash:
+
+.payment-card{
+    background-image: url(/images/shapes/circlr-shape.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.payment-card-2{
+    background-image: url(/images/shapes/circle-white-shape.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}

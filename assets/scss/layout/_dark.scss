@@ -1,0 +1,78 @@
+// theme : dark
+div[class*='v-theme--DARK_'] {
+    .smallCap {
+        color: rgb(var(--v-theme-textSecondary));
+    }
+
+    .elevation-10 {
+        box-shadow: none !important;
+    }
+
+    .v-field__outline {
+        --v-field-border-opacity: 0.38 !important;
+    }
+
+    #vector-map .dxm-layers path {
+        fill: #7C8FAC !important;
+    }
+
+    .svgMap-map-wrapper {
+        .svgMap-country {
+            stroke: #878585;
+            fill: #1A2537 !important;
+
+            &#svgMap-map-country-IN {
+                fill: rgb(var(--v-theme-primary)) !important;
+            }
+
+            &#svgMap-map-country-AF {
+                fill: rgb(var(--v-theme-error)) !important;
+            }
+
+            &#svgMap-map-country-US {
+                fill: rgb(var(--v-theme-secondary)) !important;
+            }
+        }
+
+        .svgMap-map-controls-zoom {
+            background: #c9d6de !important;
+        }
+
+    }
+
+    .dark-table {
+        background-color: rgb(var(--v-theme-light)) !important;
+    }
+
+    .authentication {
+        background-color: rgba(var(--v-theme-light)) !important;
+    }
+
+    .buynow {
+        background-color: rgba(var(--v-theme-lightprimary)) !important;
+
+        .text-surface {
+            color: White !important;
+        }
+    }
+
+    .announce-bar {
+        &.bg-textPrimary {
+            background-color: rgba(var(--v-theme-borderColor)) !important;
+            color: white !important;
+        }
+    }
+
+    .ourteam {
+        &.bg-textPrimary {
+            background-color: rgba(var(--v-theme-borderColor)) !important;
+            color: white !important;
+        }
+    }
+    .footer{
+        &.bg-textPrimary {
+            background-color: rgba(var(--v-theme-background)) !important;
+            
+        }
+    } 
+}

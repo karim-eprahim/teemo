@@ -1,0 +1,308 @@
+.hero-section {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 150px 0px 80px 0;
+}
+
+.animted-img {
+    position: absolute;
+    z-index: 9;
+    top: 35%;
+    left: 10%;
+    animation: mover 5s infinite alternate;
+    border-radius: 30px;
+}
+
+.animted-img-2 {
+    position: absolute;
+    z-index: 9;
+    top: 25%;
+    right: 10%;
+    animation: mover 5s infinite alternate;
+    border-radius: 30px;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.review-box {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+.bannerSlider {
+    padding: 25.6px;
+    min-width: 2000px;
+    height: calc(100vh - 100px);
+    max-height: 790px;
+    border-radius: 7px;
+}
+
+.animateUp {
+    animation: 35s linear 0s infinite normal none running slideup;
+}
+
+@keyframes slideup {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0px, -100%, 0px);
+    }
+}
+
+.animateDown {
+    animation: 35s linear 0s infinite normal none running slideDown;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0px, 0, 0px);
+    }
+}
+
+//
+// Sections common
+//
+
+.sectionTitle {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+@media (min-width: 1200px) {
+    .sectionTitle {
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+
+
+//
+// support
+//
+.ticket {
+    overflow: hidden;
+    width: 100%;
+    padding: 0px;
+    position: relative;
+    background-image: url('/images/landingpage/shape/line-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+//
+// money back
+//
+.money-back {
+    overflow: hidden;
+    width: 100%;
+    padding: 0px;
+    position: relative;
+    background-image: url('/images/landingpage/shape/line-bg-2.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.btn-custom-md {
+    height: 53px !important;
+    padding: 0 48px !important;
+}
+
+.btn-custom-lg {
+    height: 56px !important;
+    padding: 0 48px !important;
+}
+
+.btn-custom {
+    height: 53px;
+    padding: 0 31px;
+
+    &.lp-btn-shadow {
+        box-shadow: rgb(0 0 0 / 8%) 0px 12px 40px -8px;
+    }
+}
+
+.chip-custom {
+    font-weight: 600;
+    padding: 5px 25px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+}
+
+.lp-wraper {
+    background-color: rgba(var(--v-theme-surface));
+    overflow: hidden;
+
+    .maxWidth {
+        max-width: 1320px !important;
+    }
+
+    .v-container {
+        max-width: 1320px !important;
+    }
+
+    .carousel__pagination {
+        .carousel__pagination-button {
+            padding: 6px;
+
+            &::after {
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+                background-color: transparent;
+                background-color: rgb(var(--v-theme-textPrimary));
+                opacity: 0.25;
+            }
+
+            &:hover {
+                &::after {
+                    background-color: rgb(var(--v-theme-primary));
+                    opacity: 1;
+                }
+            }
+        }
+
+        .carousel__pagination-button--active {
+            &::after {
+                background-color: rgb(var(--v-theme-primary));
+                opacity: 1;
+            }
+        }
+    }
+
+    .carousel {
+        z-index: 2;
+
+        .navarrow {
+            .arrow-light {
+                background-color: rgb(var(--v-theme-lightprimary));
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                padding: 8px !important;
+
+                &:hover {
+                    background-color: rgb(var(--v-theme-primary));
+                    color: rgb(var(--v-theme-surface));
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        .v-toolbar__content>.v-btn:last-child {
+            margin-inline-end: 0px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .m-btn-full {
+        width: 100%;
+    }
+}
+
+.v-btn--size-default {
+    &.nav-links {
+        font-size: $font-size-root !important;
+
+        .v-btn__overlay {
+            display: none;
+        }
+
+        &:hover {
+            color: rgb(var(--v-theme-primary)) !important;
+        }
+    }
+}
+
+
+.row-up {
+    z-index: 1;
+    position: relative;
+}
+
+.prev-btn {
+    margin: 0 150px;
+}
+
+.build-app {
+    &:after {
+        content: "";
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+        top: -45px;
+        background-image: url('/images/landingpage/background/school.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 600px;
+        background-position: right;
+
+        @media screen and (max-width:1024px) {
+            bottom: -58px;
+        }
+
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+    }
+}
+
+
+.footer_link {
+    &:hover {
+        color: rgb(var(--v-theme-primary)) !important;
+    }
+
+    text-underline-offset: 4px;
+    text-decoration-color: rgb(var(--v-theme-primary));
+}
+
+@media screen and (max-width:991px) {
+    .mobile-lp-demos {
+        .v-list-group__items {
+            .v-list-item {
+                padding-inline-start: 0px !important;
+                padding-inline-end: 0 !important;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .hero-section {
+        .text-64 {
+            font-size: 40px !important;
+            line-height: 55px;
+        }
+    }
+
+    .testimonials {
+        .text-h1 {
+            font-size: 25px !important;
+        }
+    }
+}

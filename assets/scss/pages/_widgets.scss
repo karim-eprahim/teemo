@@ -1,0 +1,16 @@
+.bg-primary-gt {
+    background: linear-gradient(261.23deg, rgba(var(--v-theme-primary)) .42%, #5a52ff 100%) !important;
+
+    img {
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+.daily-activities {
+    .line {
+        width: 1px;
+        height: 50px;
+        margin-top: -6px;
+    }
+}
