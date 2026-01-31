@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   },
 
   // Modules
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt"],
 
   // Application metadata
   app: {
@@ -33,6 +33,12 @@ export default defineNuxtConfig({
   // Nitro configuration
   nitro: {
     serveStatic: true,
+  },
+
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: '' // This will be automatically overridden by NUXT_PUBLIC_API_BASE_URL
+    }
   },
 
   // Dev server handlers
