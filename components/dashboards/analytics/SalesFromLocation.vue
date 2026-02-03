@@ -8,7 +8,7 @@ const map = ref(null);
 onMounted(async () => {
   if (process.client) {
     const { default: svgMap } = await import('svgmap');
-    await import('svgmap/dist/svgMap.min.css');
+    // await import('svgmap/dist/svgMap.min.css');
 
     // Wait for DOM to fully render
     await nextTick();

@@ -220,6 +220,19 @@ const horizontalItems: menu[] = [
     },
 
     {
+        title: 'Accounts',
+        icon: 'mdi-account-group',
+        to: '#',
+        children: [
+            {
+                title: 'Account Setting',
+                icon: 'settings-minimalistic-line-duotone',
+                to: '/theme-pages/account-settings'
+            },
+        ]
+    },
+
+    {
         title: 'Pages',
         icon: 'notes-line-duotone',
         to: '#',

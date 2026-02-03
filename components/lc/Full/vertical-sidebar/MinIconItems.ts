@@ -11,39 +11,44 @@ const MiniSideIcons: minisidebar[] = [
         id: 1
     },
     {
+        icon: 'users-group-rounded-broken',
+        tooltip:'Accounts',
+        id: 2,
+    },
+    {
         icon: 'notes-line-duotone',
         tooltip:'Pages',
-        id: 2,
+        id: 3,
     },
     {
         icon: 'palette-round-line-duotone',
         tooltip:'Forms',
-        id: 3
+        id: 4
     },
     {
         icon:'align-vertical-spacing-broken',
         tooltip:'Tables',
-        id: 4
+        id: 5
     },
     {
         icon:'chart-line-duotone',
         tooltip:'Charts',
-        id: 5
+        id: 6
     },
     {
         icon:'widget-6-line-duotone',
         tooltip:'UI Components',
-        id: 6
+        id: 7
     },
     {
         icon:'lock-keyhole-line-duotone',
         tooltip:'Authentication Pages',
-        id: 7
+        id: 8
     },
     {
         icon:'mirror-left-line-duotone',
         tooltip:'Others',
-        id: 8
+        id: 9
     }
 ]
 

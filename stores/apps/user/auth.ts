@@ -3,23 +3,23 @@ import { defineStore } from 'pinia';
 import axios from '@/utils/axios';
 
 interface UserState {
-  id: string;
-  name: string;
-  bio: string;
-  image: string;
+  userData: object;
 }
 
 export const useUserStore = defineStore("user", {
   state: (): UserState => ({
-    id: '',
-    name: '',
-    bio: '',
-    image: '',
+    userData: {}
   }),
   actions: {
     async login(email: string, Password: string) {
       return await axios.post("users/login", { email, Password });
     },
+    async register(firstName: string, lastName: string, email: string, password: string) {
+      return await axios.post("users/register", { FirstName: firstName, lastName: lastName, email: email, Password: password });
+    },
+    setUserData(data:object){
+      this.$state.userData = data
+    }
   },
   persist: true
 });

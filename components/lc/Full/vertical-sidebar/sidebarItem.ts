@@ -205,10 +205,20 @@ const sidebarItem: menu[] = [
             },
         ]
     },
-
+    {
+        header: 'Accounts',
+        id: 2,
+        children: [
+            {
+                title: 'Account Setting',
+                icon: 'settings-minimalistic-line-duotone',
+                to: '/theme-pages/account-settings'
+            },
+        ]
+    },
     {
         header: 'pages',
-        id: 2,
+        id: 3,
         children: [
             {
                 title: 'Pricing',
@@ -264,7 +274,7 @@ const sidebarItem: menu[] = [
     },
     {
         header: 'icons',
-        id: 2,
+        id: 4,
         children: [
             {
                 title: 'Tabler Icons',
@@ -281,7 +291,7 @@ const sidebarItem: menu[] = [
 
     {
         header: 'Forms',
-        id: 3,
+        id: 5,
         children: [
             {
                 title: 'Form Elements',
@@ -377,7 +387,7 @@ const sidebarItem: menu[] = [
 
     {
         header: 'tables',
-        id: 4,
+        id: 6,
         children: [
             {
                 title: 'Basic Table',
@@ -414,7 +424,7 @@ const sidebarItem: menu[] = [
 
     {
         header: 'datatables',
-        id: 4,
+        id: 7,
         children: [
             {
                 title: 'Basic Table',
@@ -466,7 +476,7 @@ const sidebarItem: menu[] = [
 
     {
         header: 'Charts',
-        id: 5,
+        id: 7,
         children: [
             {
                 title: 'Line',
@@ -508,7 +518,7 @@ const sidebarItem: menu[] = [
 
     {
         header: 'UI',
-        id: 6,
+        id: 8,
         children: [
             {
                 title: 'Alert',
@@ -570,7 +580,7 @@ const sidebarItem: menu[] = [
 
     {
         header: 'Auth',
-        id: 7,
+        id: 9,
         children: [
             {
                 title: 'Error',
@@ -626,7 +636,7 @@ const sidebarItem: menu[] = [
     },
     {
         header: 'Multi Level',
-        id: 8,
+        id: 10,
         children: [
             {
                 title: 'Menu Level',
@@ -664,7 +674,7 @@ const sidebarItem: menu[] = [
     },
     {
         header: 'More Options',
-        id: 8,
+        id: 10,
         children: [
             {
                 title: 'Applications',
