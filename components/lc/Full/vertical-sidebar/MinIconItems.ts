@@ -49,6 +49,16 @@ const MiniSideIcons: minisidebar[] = [
         icon:'mirror-left-line-duotone',
         tooltip:'Others',
         id: 9
+    },
+    {
+        icon:'menu-dots-bold-duotone',
+        tooltip:'More Options',
+        id: 10
+    },
+    {
+        icon:'settings-line-duotone',
+        tooltip:'Settings',
+        id: 11
     }
 ]
 

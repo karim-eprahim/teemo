@@ -214,6 +214,16 @@ const sidebarItem: menu[] = [
                 icon: 'settings-minimalistic-line-duotone',
                 to: '/theme-pages/account-settings'
             },
+            {
+                title: 'Add Account',
+                icon: 'settings-minimalistic-line-duotone',
+                to: '/forms/form-custom'
+            },
+            {
+                title: 'All Accounts',
+                icon: 'document-add-linear',
+                to: '/tables/editable'
+            }
         ]
     },
     {
@@ -700,6 +710,22 @@ const sidebarItem: menu[] = [
                 title: 'Widgets',
                 icon: 'check-circle-bold',
                 BgColor: 'success'
+            }
+        ]
+    },
+    {
+        header: 'Settings',
+        id: 11,
+        children: [
+            {
+                title: 'Roles',
+                icon: 'key-minimalistic-2-linear',
+                to: '/settings/roles/list'
+            },
+            {
+                title: 'Permissions',
+                icon: 'square-double-alt-arrow-up-linear',
+                to: '/settings/permissions/list'
             }
         ]
     }

@@ -26,7 +26,7 @@ const breadcrumbs = ref([
     }
 ]);
 const userData = userStore.$state.userData
-console.log(userData)
+console.log("userData",userData)
 // onMounted(()=>{
 
 // })

@@ -24,7 +24,7 @@ const breadcrumbs = ref([
    <BaseBreadcrumb :title="page.title" :breadcrumbs="breadcrumbs"></BaseBreadcrumb>
    <v-row>
         <v-col cols="12" class="mb-12">
-            <UiParentCard title="Custom Form">
+            <UiParentCard title="Add Account">
                 <CustomFrom/>
             </UiParentCard>           
         </v-col>

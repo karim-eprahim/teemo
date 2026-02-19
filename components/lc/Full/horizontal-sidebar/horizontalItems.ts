@@ -229,6 +229,16 @@ const horizontalItems: menu[] = [
                 icon: 'settings-minimalistic-line-duotone',
                 to: '/theme-pages/account-settings'
             },
+            {
+                title: 'Form Custom',
+                icon: CircleIcon,
+                to: '/forms/form-custom'
+            },
+            {
+                title: 'All Accounts',
+                icon: 'document-add-linear',
+                to: '/tables/editable'
+            }
         ]
     },
 
@@ -620,73 +630,90 @@ const horizontalItems: menu[] = [
             }
         ]
     },
-    {
-        title: 'Data Tables',
-        icon: 'database-broken',
-        to: '#',
-        children: [
-            {
-                title: 'Basic Table',
-                icon: CircleIcon,
-                to: '/tables/datatables/basic'
-            },
-            {
-                title: 'Header Table',
-                icon: CircleIcon,
-                to: '/tables/datatables/header'
-            },
-            {
-                title: 'Selection Table',
-                icon: CircleIcon,
-                to: '/tables/datatables/selection'
-            },
-            {
-                title: 'Sorting Table',
-                icon: CircleIcon,
-                to: '/tables/datatables/sorting'
-            },
-            {
-                title: 'Pagination Table',
-                icon: CircleIcon,
-                to: '/tables/datatables/pagination'
-            },
-            {
-                title: 'Filtering Table',
-                icon: CircleIcon,
-                to: '/tables/datatables/filtering'
-            },
-            {
-                title: 'Grouping Table',
-                icon: CircleIcon,
-                to: '/tables/datatables/grouping'
-            },
-            {
-                title: 'Table Slots',
-                icon: CircleIcon,
-                to: '/tables/datatables/slots'
-            },
-            {
-                title: 'CRUD Table',
-                icon: CircleIcon,
-                to: '/tables/datatables/crudtable'
-            }
-        ]
-    },
+    // {
+    //     title: 'Data Tables',
+    //     icon: 'database-broken',
+    //     to: '#',
+    //     children: [
+    //         {
+    //             title: 'Basic Table',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/basic'
+    //         },
+    //         {
+    //             title: 'Header Table',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/header'
+    //         },
+    //         {
+    //             title: 'Selection Table',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/selection'
+    //         },
+    //         {
+    //             title: 'Sorting Table',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/sorting'
+    //         },
+    //         {
+    //             title: 'Pagination Table',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/pagination'
+    //         },
+    //         {
+    //             title: 'Filtering Table',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/filtering'
+    //         },
+    //         {
+    //             title: 'Grouping Table',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/grouping'
+    //         },
+    //         {
+    //             title: 'Table Slots',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/slots'
+    //         },
+    //         {
+    //             title: 'CRUD Table',
+    //             icon: CircleIcon,
+    //             to: '/tables/datatables/crudtable'
+    //         }
+    //     ]
+    // },
 
+    // {
+    //     title: 'Icons',
+    //     icon: 'sticker-smile-square-line-duotone',
+    //     to: '#',
+    //     children: [
+    //         {
+    //             title: 'Tabler Icons',
+    //             icon: CircleIcon,
+    //             to: '/icons/tabler'
+    //         },
+    //         {
+    //             title: 'Solar Icons',
+    //             icon: CircleIcon,
+    //             to: '/icons/solar'
+    //         }
+    //     ]
+    // },
     {
-        title: 'Icons',
-        icon: 'sticker-smile-square-line-duotone',
+        title: 'Settings',
+        icon: 'settings-line-duotone',
         to: '#',
         children: [
             {
-                title: 'Tabler Icons',
+                title: 'Roles',
                 icon: CircleIcon,
-                to: '/icons/tabler'
+                to: '/settings/roles'
             },
             {
-                title: 'Solar Icons',
+                title: 'Permissions',
                 icon: CircleIcon,
-                to: '/icons/solar'
+                to: '/settings/permissions'
             }
         ]
     }
